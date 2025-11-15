@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" rx="24" fill="#F4F4F5"/>
+  <!-- Three outlined logs -->
+  <g stroke="#71717A" stroke-width="8" fill="none">
+    <circle cx="250" cy="225" r="80"/>
+    <circle cx="400" cy="225" r="80"/>
+    <circle cx="550" cy="225" r="80"/>
+    <!-- Growth rings -->
+    <circle cx="250" cy="225" r="40" stroke-width="4"/>
+    <circle cx="400" cy="225" r="40" stroke-width="4"/>
+    <circle cx="550" cy="225" r="40" stroke-width="4"/>
+  </g>
+  <text x="50%" y="72" text-anchor="middle" fill="#3F3F46" font-size="28" font-family="sans-serif">Timber Logs Distribution</text>
+</svg>

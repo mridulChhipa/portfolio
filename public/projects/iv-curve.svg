@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" rx="24" fill="#F4F4F5"/>
+  <path d="M60 360 C 220 120, 580 120, 740 360" stroke="#71717A" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <circle cx="60" cy="360" r="6" fill="#71717A"/>
+  <circle cx="740" cy="360" r="6" fill="#71717A"/>
+  <text x="50%" y="72" text-anchor="middle" fill="#3F3F46" font-size="28" font-family="sans-serif">Volatility Smile</text>
+</svg>

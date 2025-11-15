@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="450" viewBox="0 0 800 450" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" rx="24" fill="#F4F4F5"/>
+  <!-- Generic git branching icon (not GitHub Octocat) -->
+  <g stroke="#71717A" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <circle cx="220" cy="110" r="16" fill="#71717A"/>
+    <circle cx="220" cy="340" r="16" fill="#71717A"/>
+    <circle cx="580" cy="225" r="16" fill="#71717A"/>
+    <path d="M220 126 v180 c0 40 60 60 120 60 h120"/>
+    <path d="M220 126 c0 40 60 60 120 60 h120"/>
+  </g>
+  <text x="50%" y="72" text-anchor="middle" fill="#3F3F46" font-size="28" font-family="sans-serif">Version Control</text>
+</svg>
