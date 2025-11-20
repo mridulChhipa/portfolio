@@ -56,7 +56,7 @@ export default function SelectedProjects() {
           <div className="flex items-stretch snap-x snap-mandatory gap-4">
             {selected.map((p) => (
               <div key={p.id} className="min-w-[260px] sm:min-w-[320px] md:min-w-[360px] snap-start flex">
-                <ProjectCard project={p} />
+                <ProjectCard project={p} showImage={false} />
               </div>
             ))}
           </div>
