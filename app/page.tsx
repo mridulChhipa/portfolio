@@ -1,21 +1,21 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import SelectedProjects from "@/components/SelectedProjects";
-import Footer from "@/components/Footer";
-import { portfolio } from "@/content/portfolio";
-import Link from "next/link";
+import Nav from "@/components/sections/Nav";
+import Hero from "@/components/sections/Hero";
+import About from "@/components/sections/About";
+import Projects from "@/components/sections/Projects";
+import Skills from "@/components/sections/Skills";
+import Achievements from "@/components/sections/Achievements";
+import Contact from "@/components/sections/Contact";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-zinc-50 font-sans dark:bg-black">
-      <Header />
-      <main className="mx-auto max-w-4xl px-6">
-        <Hero />
-
-        <SelectedProjects />
-
-        <Footer />
-      </main>
+    <div style={{ minHeight: "100vh", background: "var(--bg)", fontFamily: "var(--font-body)", color: "var(--text)" }}>
+      <Nav />
+      <Hero />
+      <About />
+      <Projects />
+      <Skills />
+      <Achievements />
+      <Contact />
     </div>
   );
 }
