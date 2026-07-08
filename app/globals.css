@@ -38,6 +38,7 @@
   /* Light-mode "Terminal Pokédex" palette */
   --bg: #f8fafc;
   --bg-deep: #f1f5f9;
+  --nav-bg: rgba(248, 250, 252, 0.94);
   --surface: #ffffff;
   --surface-2: #f1f5f9;
   --surface-hover: #f8fafc;
@@ -51,7 +52,7 @@
   --text-on-accent: #fffaf0;
   --accent: #d97706;
   --accent-hover: #b45309;
-  --accent-2: #0284c7;
+  --accent-2: #0226c7;
   --accent-2-hover: #0369a1;
   --info: #7c3aed;
   --danger: #dc2626;
@@ -80,6 +81,53 @@
   );
 }
 
+/* Dark-mode "Terminal Pokédex" palette — the design system's original tokens */
+:root[data-theme="dark"] {
+  --bg: #0f172a;
+  --bg-deep: #0b1120;
+  --nav-bg: rgba(15, 23, 42, 0.94);
+  --surface: #1e293b;
+  --surface-2: #334155;
+  --surface-hover: #263449;
+  --border: #334155;
+  --border-strong: #475569;
+  --border-accent: #f59e0b;
+  --text: #e2e8f0;
+  --text-strong: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-faint: #64748b;
+  --text-on-accent: #0b1120;
+  --accent: #f59e0b;
+  --accent-hover: #fbbf24;
+  --accent-2: #6bb7ff;
+  --accent-2-hover: #4cabff;
+  --info: #38bdf8;
+  --danger: #ef4444;
+  --link: #f59e0b;
+  --link-hover: #fbbf24;
+  --violet-500: #a78bfa;
+  --sky-500: #38bdf8;
+  --emerald-500: #106db9;
+  --red-400: #f87171;
+  --red-500: #ef4444;
+  --red-600: #dc2626;
+  --amber-600: #d97706;
+  --slate-400: #94a3b8;
+  --slate-600: #475569;
+  --slate-700: #334155;
+
+  --shadow-pixel: 3px 3px 0 0 rgba(0, 0, 0, 0.55);
+  --shadow-pixel-lg: 5px 5px 0 0 rgba(0, 0, 0, 0.55);
+  --glow-accent: 0 0 0 3px rgba(245, 158, 11, 0.25);
+  --scanline: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.015) 0px,
+    rgba(255, 255, 255, 0.015) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -88,6 +136,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
+  transition: background-color var(--dur-slow) var(--ease-out), color var(--dur-slow) var(--ease-out);
 }
 
 a {

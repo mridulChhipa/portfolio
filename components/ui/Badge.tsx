@@ -3,7 +3,7 @@ import type { ReactNode, CSSProperties } from "react";
 type Status = "ok" | "warn" | "danger" | "info" | "idle";
 
 const STATUS_COLORS: Record<Status, { bg: string; fg: string }> = {
-  ok: { bg: "var(--emerald-500)", fg: "#04202b" },
+  ok: { bg: "var(--emerald-500)", fg: "#cdeeff" },
   warn: { bg: "var(--amber-600)", fg: "#2a1a00" },
   danger: { bg: "var(--red-500)", fg: "#2a0606" },
   info: { bg: "var(--sky-500)", fg: "#04202b" },

@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import Badge from "@/components/ui/Badge";
 import Icon from "@/components/ui/Icon";
 import IconButton from "@/components/ui/IconButton";
+import ThemeToggle from "@/components/ui/ThemeToggle";
 
 const LINKS = [
   { href: "#about", label: "About" },
@@ -38,7 +38,7 @@ export default function Nav() {
           position: "sticky",
           top: 0,
           zIndex: 50,
-          background: "rgba(248,250,252,0.94)",
+          background: "var(--nav-bg)",
           backdropFilter: "blur(4px)",
           borderBottom: "1px solid var(--border)",
           padding: "0 24px",
@@ -87,15 +87,16 @@ export default function Nav() {
                   {l.label}
                 </a>
               ))}
-              <Badge status="ok" dot>
-                Open to internships
-              </Badge>
+              <ThemeToggle />
             </div>
           )}
           {isMobile && (
-            <IconButton label="Open menu" onClick={() => setSidebarOpen(true)}>
-              <Icon name="menu" size={20} />
-            </IconButton>
+            <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+              <ThemeToggle />
+              <IconButton label="Open menu" onClick={() => setSidebarOpen(true)}>
+                <Icon name="menu" size={20} />
+              </IconButton>
+            </div>
           )}
         </div>
       </nav>
@@ -189,11 +190,6 @@ export default function Nav() {
             </a>
           ))}
         </nav>
-        <div style={{ padding: "8px 22px" }}>
-          <Badge status="ok" dot>
-            Open to internships
-          </Badge>
-        </div>
         <div
           style={{
             marginTop: "auto",
