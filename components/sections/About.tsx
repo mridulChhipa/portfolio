@@ -19,8 +19,18 @@ const eyebrowStyle: React.CSSProperties = {
 
 export default function About() {
   return (
-    <section id="about" style={{ padding: "64px 24px" }}>
-      <div style={{ maxWidth: 1120, margin: "0 auto", display: "flex", flexDirection: "column", gap: 28 }}>
+    <section id="about" style={{ padding: "64px 24px", position: "relative", overflow: "hidden" }}>
+      <div
+        aria-hidden="true"
+        className="pokeball-accent"
+        style={{ width: 230, height: 230, top: 10, right: -70, transform: "rotate(28deg)" }}
+      />
+      <div
+        aria-hidden="true"
+        className="pokeball-accent"
+        style={{ width: 95, height: 95, bottom: -20, left: "30%", transform: "rotate(-15deg)" }}
+      />
+      <div style={{ maxWidth: 1120, margin: "0 auto", display: "flex", flexDirection: "column", gap: 28, position: "relative", zIndex: 1 }}>
         <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
           <span
             style={{

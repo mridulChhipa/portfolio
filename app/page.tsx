@@ -8,7 +8,7 @@ import Contact from "@/components/sections/Contact";
 
 export default function Home() {
   return (
-    <div style={{ minHeight: "100vh", background: "var(--bg)", fontFamily: "var(--font-body)", color: "var(--text)" }}>
+    <div style={{ minHeight: "100vh", fontFamily: "var(--font-body)", color: "var(--text)" }}>
       <Nav />
       <Hero />
       <About />

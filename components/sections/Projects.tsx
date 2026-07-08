@@ -8,8 +8,31 @@ export default function Projects() {
   const [hovered, setHovered] = useState(-1);
 
   return (
-    <section id="projects" style={{ padding: "64px 24px" }}>
-      <div style={{ maxWidth: 1120, margin: "0 auto", display: "flex", flexDirection: "column", gap: 36 }}>
+    <section id="projects" style={{ padding: "64px 24px", position: "relative", overflow: "hidden" }}>
+      <pre aria-hidden="true" className="code-watermark" style={{ top: 34, right: 24, textAlign: "right" }}>
+{`> tomasulo.commit(rob.head)
+> quadtree.hitTest(cursor)
+> lsm.forceFullCompaction()
+> knn.query(strike, k=8)
+> vga.drawScanline(y)
+while (true) { optimize(); }`}
+      </pre>
+      <div
+        aria-hidden="true"
+        className="pokeball-accent"
+        style={{ width: 250, height: 250, top: "38%", left: -90, transform: "rotate(-20deg)" }}
+      />
+      <div
+        aria-hidden="true"
+        className="pokeball-accent"
+        style={{ width: 160, height: 160, bottom: -40, right: -45, transform: "rotate(35deg)" }}
+      />
+      <div
+        aria-hidden="true"
+        className="pokeball-accent"
+        style={{ width: 90, height: 90, bottom: 6, left: "52%", transform: "rotate(10deg)" }}
+      />
+      <div style={{ maxWidth: 1120, margin: "0 auto", display: "flex", flexDirection: "column", gap: 36, position: "relative", zIndex: 1 }}>
         <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
           <span
             style={{

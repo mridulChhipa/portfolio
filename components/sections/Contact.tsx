@@ -16,8 +16,18 @@ const CONTACTS: { href: string; icon: IconName; label: string; value: string; ex
 
 export default function Contact() {
   return (
-    <section id="contact" style={{ padding: "64px 24px 40px" }}>
-      <div style={{ maxWidth: 1120, margin: "0 auto", display: "flex", flexDirection: "column", gap: 36 }}>
+    <section id="contact" style={{ padding: "64px 24px 40px", position: "relative", overflow: "hidden" }}>
+      <div
+        aria-hidden="true"
+        className="pokeball-accent"
+        style={{ width: 300, height: 300, bottom: -120, left: -90, transform: "rotate(-14deg)" }}
+      />
+      <div
+        aria-hidden="true"
+        className="pokeball-accent"
+        style={{ width: 150, height: 150, top: 30, right: "28%", transform: "rotate(20deg)" }}
+      />
+      <div style={{ maxWidth: 1120, margin: "0 auto", display: "flex", flexDirection: "column", gap: 36, position: "relative", zIndex: 1 }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", gap: 24, flexWrap: "wrap" }}>
           <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
             <span

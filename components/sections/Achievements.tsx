@@ -3,8 +3,18 @@ import { ACHIEVEMENTS } from "@/components/data";
 
 export default function Achievements() {
   return (
-    <section id="achievements" style={{ padding: "64px 24px" }}>
-      <div style={{ maxWidth: 1120, margin: "0 auto", display: "flex", flexDirection: "column", gap: 36 }}>
+    <section id="achievements" style={{ padding: "64px 24px", position: "relative", overflow: "hidden" }}>
+      <div
+        aria-hidden="true"
+        className="pokeball-accent"
+        style={{ width: 220, height: 220, top: "45%", right: -80, transform: "rotate(-30deg)" }}
+      />
+      <div
+        aria-hidden="true"
+        className="pokeball-accent"
+        style={{ width: 90, height: 90, top: 25, left: "38%", transform: "rotate(12deg)" }}
+      />
+      <div style={{ maxWidth: 1120, margin: "0 auto", display: "flex", flexDirection: "column", gap: 36, position: "relative", zIndex: 1 }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end", gap: 24, flexWrap: "wrap" }}>
           <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
             <span

@@ -20,7 +20,36 @@ export default function Hero() {
   }, []);
 
   return (
-    <header id="top" style={{ padding: "clamp(56px, 10vw, 110px) 24px clamp(56px, 9vw, 96px)" }}>
+    <header
+      id="top"
+      style={{
+        padding: "clamp(56px, 10vw, 110px) 24px clamp(56px, 9vw, 96px)",
+        position: "relative",
+        overflow: "hidden",
+      }}
+    >
+      <span
+        aria-hidden="true"
+        className="prompt-watermark"
+        style={{ fontSize: "clamp(80px, 11vw, 150px)", bottom: -18, left: -8, lineHeight: 1 }}
+      >
+        mridul@iitd:~$
+      </span>
+      <div
+        aria-hidden="true"
+        className="pokeball-accent"
+        style={{ width: 380, height: 380, top: -90, right: -110, transform: "rotate(18deg)" }}
+      />
+      <div
+        aria-hidden="true"
+        className="pokeball-accent"
+        style={{ width: 110, height: 110, top: "24%", left: "44%", transform: "rotate(-24deg)" }}
+      />
+      <div
+        aria-hidden="true"
+        className="pokeball-accent"
+        style={{ width: 200, height: 200, bottom: -70, right: "20%", transform: "rotate(-12deg)" }}
+      />
       <div
         style={{
           maxWidth: 1120,
@@ -29,6 +58,8 @@ export default function Hero() {
           gridTemplateColumns: "repeat(auto-fit, minmax(min(420px, 100%), 1fr))",
           gap: 48,
           alignItems: "center",
+          position: "relative",
+          zIndex: 1,
         }}
       >
         <div style={{ display: "flex", flexDirection: "column", gap: 22, minWidth: 0 }}>

@@ -23,8 +23,23 @@ const eyebrowStyle: React.CSSProperties = {
 
 export default function Skills() {
   return (
-    <section id="skills" style={{ padding: "64px 24px" }}>
-      <div style={{ maxWidth: 1120, margin: "0 auto", display: "flex", flexDirection: "column", gap: 36 }}>
+    <section id="skills" style={{ padding: "64px 24px", position: "relative", overflow: "hidden" }}>
+      <pre aria-hidden="true" className="code-watermark" style={{ top: 30, right: 24, textAlign: "right" }}>
+{`$ perf stat ./simulator
+$ g++ -O3 -march=native
+$ python train.py --epochs 50`}
+      </pre>
+      <div
+        aria-hidden="true"
+        className="pokeball-accent"
+        style={{ width: 190, height: 190, bottom: -60, left: -55, transform: "rotate(22deg)" }}
+      />
+      <div
+        aria-hidden="true"
+        className="pokeball-accent"
+        style={{ width: 130, height: 130, top: "58%", right: -40, transform: "rotate(-18deg)" }}
+      />
+      <div style={{ maxWidth: 1120, margin: "0 auto", display: "flex", flexDirection: "column", gap: 36, position: "relative", zIndex: 1 }}>
         <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
           <span
             style={{
